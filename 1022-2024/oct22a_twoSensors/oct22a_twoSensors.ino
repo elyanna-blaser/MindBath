@@ -7,6 +7,7 @@ int mic2; // variable for micpin2 analogRead
 int amplitude1; // variable for micpin1 analogRead
 int amplitude2; // variable for micpin2 analogRead
 
+
 // mic is powered from 3.3V,
 // output will be centered at 1.65v, which will be
 // an analogRead value of 1.65*1023 = 337
