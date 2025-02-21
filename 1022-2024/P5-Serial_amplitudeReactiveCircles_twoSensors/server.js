@@ -16,7 +16,7 @@ server.listen(3001, () => {
 const { SerialPort } = require("serialport");
 const { ReadlineParser } = require("@serialport/parser-readline");
 
-const port = new SerialPort({ path: "/dev/cu.usbserial-110", baudRate: 9600 });
+const port = new SerialPort({ path: "/dev/cu.usbserial-10", baudRate: 9600 });
 console.log("Serial port opened");
 const parser = port.pipe(new ReadlineParser({ delimiter: "\r\n" }));
 console.log("parse");
